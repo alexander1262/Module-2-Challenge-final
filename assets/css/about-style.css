@@ -1,0 +1,21 @@
+* {
+    background-color: #ace7df;
+}
+
+.header {
+    font-family: monospace;
+    margin: auto;
+    position: relative;
+    text-align: center;
+    color: #343636;
+    font-size: 50px;
+}
+
+.about-me {
+    font-family: monospace;
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: center;
+    color: #343636;
+    font-size: 24px;
+}

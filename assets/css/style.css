@@ -1,0 +1,213 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #ace7df;
+}
+
+.header {
+    padding: 15px;
+    font-family: monospace;
+    background-color: #343636;
+    color: #ace7df;
+    margin: 20px 20px;
+}
+
+.header h1 {
+    display: inline-block;
+    font-size: 36px;
+    width: 500px;
+    height: 80px;
+    margin: 0 0 0 25px;
+    box-sizing: content-box;
+}
+
+.header div {
+    float: right;
+}
+
+.header div ul {
+    list-style-type: none;
+}
+
+.header div ul li {
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+}
+
+a {
+    display: flex;
+    flex-direction: column;
+    font-family: monospace;
+    color: #ace7df;
+    font-size: 18px;
+    margin: auto;
+}
+
+.header div ul li a {
+    padding: 3px;
+    border-color: #ace7df;
+    border: solid;
+}
+
+.header div ul li a:hover {
+    background-color: #ace7df;
+    color: #343636;
+}
+
+.intro {
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: inherit;
+    justify-content: space-between;
+    border: solid #343636;
+    margin: 20px;
+}
+
+.intro img {
+    display: inline-block;
+    max-width: 250px;
+    max-height: 600px;
+    margin: 20px;
+    width: 33%;
+    border: solid #343636;
+}
+
+.intro p {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: inherit;
+    justify-content: space-between;
+    position: relative;
+    float: right;
+    font-family: monospace;
+    font-size: 48px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.about-me {
+    display: block;
+    height: 300px;
+    width: 500px;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    background-image: url("../images/pennsylvania.jpg");
+    background-size: cover;
+    background-position: center;
+    border: solid #343636;
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: monospace;
+}
+
+.about-me p{
+    opacity: 0;
+    transform: scale(0);
+    transition: 0.5s;
+    font-size: 100px;
+    color: #ace7df;
+}
+
+.about-me:hover {
+    box-shadow: 0 0 0 200px inset;
+}
+
+.about-me:hover p{
+    opacity: 1;
+    transform: scale(1);
+}
+
+.work {
+    display: block;
+    height: 300px;
+    width: 500px;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    background-image: url("../images/download.jpg");
+    background-size: cover;
+    background-position: center;
+    border: solid #343636;
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: monospace;
+}
+
+.work p{
+    opacity: 0;
+    transform: scale(0);
+    transition: 0.5s;
+    font-size: 100px;
+    color: #ace7df;
+}
+
+.work:hover {
+    box-shadow: 0 0 0 200px inset;
+}
+
+.work:hover p{
+    opacity: 1;
+    transform: scale(1);
+}
+
+.resume {
+    display: block;
+    height: 300px;
+    width: 500px;
+    margin: auto;
+    background-image: url("../images/resume.jpg");
+    background-size: cover;
+    background-position: center;
+    border: solid #343636;
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: monospace;
+}
+
+.resume p{
+    opacity: 0;
+    transform: scale(0);
+    transition: 0.5s;
+    font-size: 100px;
+    color: #ace7df;
+}
+
+.resume:hover {
+    box-shadow: 0 0 0 200px inset;
+}
+
+.resume:hover p{
+    opacity: 1;
+    transform: scale(1);
+}
+
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #1b1b1b;
+    color: #ace7df;
+    margin: 20px 20px;
+    font-family: monospace;
+}
+
+@media screen and (max-width: 992px) {
+    .header {
+        height: 170px;
+    }
+}
